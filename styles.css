@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*********************************************LOGIN page***********************************************/
+body{
+    background-color: #fafafa;
+}
+
+#headlineLogin{
+    text-align: center;
+    font: bold 40px "Times New Roman", Georgia, serif;
+    margin-top: 15px;
+    color: #e57300;
+}
+
+label{
+    font: bold 20px "Times New Roman", Georgia, serif;
+
+}
+.loginform{
+    border: 3px solid #f1f1f1;
+    margin: 20px 300px 0 300px;
+}
+.logincontainer{
+    padding: 20px;
+    margin: 10px;
+}
+#username, #password{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 8px 0 25px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+.logocontainer{
+    width: 100%;
+    text-align: center;
+}
+#loginsubmitbtn{
+    background-color: #45b3e7;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+}
+#loginsubmitbtn:hover{
+    opacity: 0.9;
+}
+.resetcontainer{
+    background-color:#f1f1f1; 
+}
+#resetbtn{
+    width: auto;
+    background-color: #ff5349;
+    padding: 10px 18px;
+    margin: 25px 0 15px 20px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    color:white;
+    font-weight: bold;
+
+}
+#resetbtn:hover{
+    opacity: 0.9;
+}
+
+span.forgotpsw{
+    float: right;
+    margin: 20px 15px 0 0;
+}
+span.forgotpsw a{
+    color: #000000;
+}
+
+/***from small mobile to table screens***/
+@media screen and (max-width: 768px)
+{
+    .loginform{
+        margin: 5px;
+    }
+    
+    .logocontainer img{
+        width:40%;
+    }
+
+}
+
+/*******************************************NOTES page*****************************************/
+header{
+    border-bottom: 3px solid #f1f1f1;
+    margin: 15px 100px 0 100px;
+    height: 50px;
+}
+.headlineNotes{
+    font: bold 20px "Times New Roman", Georgia, serif;
+    display: inline-block;
+    color: #e57300;
+}
+.logout{
+    text-decoration: none;
+    background-color:#ff5349;
+    color: white;
+    font-weight: bold;
+    width:auto;
+    padding: 10px 20px 10px 20px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.logout:hover{
+    opacity: 0.9;
+}
+.notesform{
+    border:3px solid #f1f1f1;
+    margin: 20px 500px 0 500px;
+}
+.note-container{
+    padding: 10px;
+}
+.noteformLabel{
+    text-align: center;
+    font: bold 30px "Times New Roman", Georgia, serif;
+    color: #2a2a2a;
+    margin: 20px;
+}
+.mynotes{
+    display: inline-block;
+    margin: 10px 0 20px 10px;;
+    width: 80%;
+    height: 40px;
+}
+.notesubmitbtn{
+    background-color: #45b3e7;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 10px 10px 20px 0px;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+}
+.notesubmitbtn:hover{
+    opacity: 0.9;
+}
+.noteResult{
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 40px;
+   color: #e57300;
+
+}
+
+/*******from small to large mobile screens*****/
+@media screen and (max-width: 425px){
+    header{
+    margin:2px;
+    }
+    .logout{
+        padding: 5px 10px 5px 10px;
+        margin: 5px 5px 10px 0;
+        }
+    
+    .notesform{
+        margin: 2px;
+    }
+    .headlineNotes{
+    font: bold 15px "Times New Roman", Georgia, serif;
+    margin-top: 10px;
+    }
+    .mynotes{
+        width:100%;
+        margin-left: 0;
+    }
+
+}
+/************for normal size laptop screens*************/
+
+@media screen and (max-width: 1024px){
+    .notesform{
+    margin: 20px 20px 0 20px;
+    }
+
+}
+
+
+
+
+
